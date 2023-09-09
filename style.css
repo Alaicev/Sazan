@@ -1,0 +1,61 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 60px;
+}
+
+body{
+  background-color: #1a1a35;
+  color: white;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  z-index: 3;
+}
+
+.image {
+  width: 100%;
+  
+}
+
+#images{
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#images::before {
+  position: absolute;
+  transform: skew(-15deg);
+  width: 50%;
+  height: 100%;
+  background:linear-gradient(60deg, #1a1a35,#1a1a35c0);
+  z-index: 2;
+  content: '';
+  top: 0;
+  left: -15%;
+}
+
+.title {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.text {
+  text-align: justify;
+  margin: 15px 0;
+  text-indent: 30px;
+}
+
+.wrapper {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
